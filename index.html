@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JEE 2027 · Your Study Space ♡</title>
+<style>
+:root{--bg:#fffafd;--pink:#f4b8cc;--pink2:#fce7ef;--pink3:#fff1f6;--ink:#392d38;--muted:#927f8d;--line:#f1dfe8;--white:#fff;--green:#7caa93;--shadow:0 8px 28px rgba(180,111,143,.09)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:grid;grid-template-columns:225px 1fr;min-height:100vh}.sidebar{background:#fff;border-right:1px solid var(--line);padding:22px 14px;position:sticky;top:0;height:100vh}.brand{display:flex;gap:10px;align-items:center;padding:4px 9px 24px}.brand-icon{background:var(--pink2);border-radius:12px;width:38px;height:38px;display:grid;place-items:center;font-size:20px}.brand strong{display:block;font-family:Georgia,serif;font-size:19px}.brand small{color:var(--muted);font-size:11px}.nav{display:grid;gap:5px}.nav button{background:transparent;text-align:left;color:#816f7c;padding:11px 12px;border-radius:12px;display:flex;gap:11px;align-items:center;font-size:13px}.nav button.active,.nav button:hover{background:var(--pink2);color:#8e4666}.sidebar-note{position:absolute;bottom:20px;left:14px;right:14px;padding:13px;background:var(--pink3);border:1px solid var(--line);border-radius:14px;font-size:12px;color:#95627b}.main{min-width:0;padding:27px clamp(16px,3vw,38px) 50px;max-width:1600px;width:100%;margin:0 auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:23px}.eyebrow{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#b17b95;font-weight:700}.topbar h1{font:26px Georgia,serif;margin:5px 0}.muted{color:var(--muted)}.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#f8d8e5,#fff);display:grid;place-items:center;font-size:20px;border:1px solid var(--line)}.page{display:none}.page.active{display:block}.grid{display:grid;gap:16px}.hero-grid{grid-template-columns:1.4fr 1fr}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}.four{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid var(--line);border-radius:19px;padding:19px;box-shadow:var(--shadow);min-width:0}.card h2,.card h3{margin:0 0 12px}.card h2{font:20px Georgia,serif}.card h3{font-size:14px}.greeting{background:linear-gradient(125deg,#fff 5%,#fff0f6 100%);min-height:160px;display:flex;justify-content:space-between;gap:16px;align-items:center}.greeting h2{font:30px Georgia,serif;margin:7px 0}.greeting p{color:var(--muted);font-size:13px;max-width:430px;line-height:1.6}.flower{font-size:53px;filter:drop-shadow(0 5px 12px #f3c4d5)}.pill{display:inline-flex;padding:5px 9px;border-radius:999px;background:var(--pink2);color:#a65d7c;font-size:11px;font-weight:650}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:16px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px}.stat label{font-size:11px;color:var(--muted)}.stat strong{display:block;font:24px Georgia,serif;margin:7px 0}.stat small{font-size:11px;color:#a96d88}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:22px 0 12px}.section-head h2{font:22px Georgia,serif;margin:0}.btn{background:#e995b5;color:white;border-radius:11px;padding:10px 14px;font-size:12px;font-weight:700;box-shadow:0 4px 12px #efc4d4}.btn:hover{filter:brightness(.97)}.btn.secondary{background:var(--pink2);color:#965673;box-shadow:none}.btn.ghost{background:white;color:#8c6c7c;border:1px solid var(--line);box-shadow:none}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.subject-row{margin:13px 0}.subject-row .row{font-size:12px;margin-bottom:7px}.bar{height:7px;background:#f8eaf0;border-radius:99px;overflow:hidden}.bar span{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#e994b4,#f6c6d8)}.task-list{display:grid;gap:9px}.task{display:flex;align-items:flex-start;gap:9px;padding:10px 0;border-bottom:1px solid #f7edf1;font-size:12px}.task:last-child{border:0}.task input{accent-color:#df8eae;margin-top:2px}.task.done .task-title{text-decoration:line-through;color:#b7a9b2}.task-title{font-weight:600}.task-meta{font-size:10px;color:var(--muted);margin-top:4px}.field{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffafd;color:var(--ink);outline:none}.field:focus{border-color:#e6a1bb;box-shadow:0 0 0 3px #fce7ef}.form-row{display:flex;gap:9px;margin:12px 0}.form-row>*{min-width:0}.subject-tabs,.filters{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.tab{background:#fff;border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:#896d7d;font-size:12px}.tab.active{background:var(--pink2);border-color:#f3c9d8;color:#a34f74}.topic-list{display:grid;gap:8px}.topic{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border:1px solid #f4e8ee;padding:12px;border-radius:12px}.topic strong{font-size:12px}.topic small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.topic select{max-width:145px;font-size:11px;padding:7px;border:1px solid var(--line);border-radius:8px;background:white}.timer-wrap{text-align:center;padding:20px 0}.timer-circle{height:230px;width:230px;max-width:70vw;margin:0 auto 20px;border-radius:50%;background:conic-gradient(#e995b5 var(--progress,0%),#fbeaf1 0);display:grid;place-items:center;position:relative}.timer-circle:before{content:"";position:absolute;inset:11px;border-radius:50%;background:white}.timer-inner{position:relative;z-index:1}.timer-time{font:42px Georgia,serif}.timer-caption{font-size:12px;color:var(--muted);margin-top:5px}.timer-controls{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.empty{padding:24px;text-align:center;color:var(--muted);font-size:13px}.table-like{display:grid;gap:8px}.test-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;align-items:center;border-bottom:1px solid #f5e9ef;padding:12px 0;font-size:12px}.test-row.header{font-size:10px;color:var(--muted);font-weight:700}.quote{font:italic 17px Georgia,serif;line-height:1.5;color:#87516a}.small{font-size:11px}.mobile-nav{display:none}.modal-backdrop{position:fixed;inset:0;background:rgba(69,44,59,.42);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}.modal-backdrop.show{display:flex}.modal{width:min(440px,100%);background:linear-gradient(145deg,#fff,#fff3f8);border:1px solid #f2cdda;border-radius:26px;padding:30px 27px;text-align:center;box-shadow:0 25px 80px #613c5333;position:relative;animation:pop .35s ease}.modal .close{position:absolute;right:15px;top:13px;background:transparent;color:#9d7c8d;font-size:20px}.modal .flower{font-size:46px}.modal h2{font:26px Georgia,serif;margin:14px 0 10px}.modal p{line-height:1.7;color:#6e5a68;font-size:14px}.modal .signature{font:italic 14px Georgia,serif;color:#ad7190;margin:15px 0 22px}@keyframes pop{from{transform:translateY(10px) scale(.97);opacity:0}to{transform:none;opacity:1}}.toast{position:fixed;bottom:20px;right:20px;background:#4d3847;color:white;padding:12px 16px;border-radius:12px;font-size:12px;display:none;z-index:60}.footer-note{font-size:10px;color:#b09aa7;margin-top:16px;line-height:1.6}
+@media(max-width:1000px){.app{grid-template-columns:190px 1fr}.four{grid-template-columns:repeat(2,1fr)}.hero-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.app{display:block}.sidebar{display:none}.main{padding:19px 14px 88px}.topbar h1{font-size:23px}.greeting h2{font-size:25px}.flower{font-size:38px}.two,.three{grid-template-columns:1fr}.stats{gap:9px}.stat{padding:12px}.stat strong{font-size:21px}.card{padding:15px}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:30;border-top:1px solid var(--line);justify-content:space-around;padding:8px 3px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -5px 20px #d9b7c31c}.mobile-nav button{background:transparent;color:#987f8e;font-size:10px;display:grid;gap:3px;justify-items:center}.mobile-nav button.active{color:#b05d80}.mobile-nav span{font-size:18px}.form-row{flex-wrap:wrap}.topic{grid-template-columns:1fr}.topic select{max-width:none;width:100%}.test-row{grid-template-columns:1.2fr .8fr .8fr}.timer-time{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-icon">♡</div><div><strong>JEE 2027</strong><small>Big dreams, little steps ♡</small></div></div>
+  <nav class="nav" id="sideNav">
+    <button class="active" data-page="dashboard">⌂ Dashboard</button><button data-page="focus">◷ Focus Room</button><button data-page="syllabus">♡ Syllabus</button><button data-page="tasks">☷ Tasks</button><button data-page="calendar">▦ Calendar</button><button data-page="revision">↻ Revision</button><button data-page="tests">▤ Mock Tests</button><button data-page="pyq">✎ PYQ Tracker</button><button data-page="notes">▧ Notes</button><button data-page="habits">✿ Habits</button><button data-page="settings">⚙ Settings</button>
+  </nav>
+  <div class="sidebar-note">🌷 You can do it. One little step at a time. ♡</div>
+</aside>
+<main class="main">
+  <header class="topbar"><div><div class="eyebrow">Your personal study space</div><h1 id="pageTitle">Good morning, princess. ♡</h1><div class="muted small" id="dateLine"></div></div><div class="avatar">🌷</div></header>
+  <section class="page active" id="page-dashboard">
+    <div class="grid hero-grid">
+      <div class="card greeting"><div><span class="pill">YOUR JEE JOURNEY</span><h2>Little steps. Big dreams.</h2><p>You're building something wonderful, one focused session at a time. Be proud of the effort nobody else sees. ♡</p><button class="btn" onclick="showPage('focus')">Start focusing →</button></div><div class="flower">🌸</div></div>
+      <div class="card"><div class="row"><h2>“Progress, not perfection.”</h2><span class="flower" style="font-size:29px">✿</span></div><p class="quote" id="dailyQuote">You are closer to your dreams than you think.</p><p class="muted small">Be gentle with yourself. Keep going, beautiful. ♡</p><button class="btn secondary" onclick="openCompliment(true)">A little love note ♡</button></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><label>FOCUS TODAY</label><strong id="todayFocus">0 min</strong><small>Every minute counts</small></div>
+      <div class="stat"><label>TASKS DONE</label><strong id="taskStat">0 / 0</strong><small>One thing at a time</small></div>
+      <div class="stat"><label>SYLLABUS DONE</label><strong id="syllabusStat">0%</strong><small>Keep showing up</small></div>
+      <div class="stat"><label>STUDY STREAK</label><strong id="streakStat">0 days</strong><small>No guilt, just restart</small></div>
+    </div>
+    <div class="grid two">
+      <div class="card"><div class="section-head" style="margin-top:0"><h2>Today's tasks</h2><button class="btn secondary" onclick="showPage('tasks')">View all →</button></div><div id="dashTasks" class="task-list"></div></div>
+      <div class="card"><div class="section-head" style="margin-top:0"><h2>Subject progress</h2><button class="btn secondary" onclick="showPage('syllabus')">Syllabus →</button></div><div id="subjectProgress"></div></div>
+    </div>
+    <div class="grid two" style="margin-top:16px">
+      <div class="card"><h2>Coming up ♡</h2><div class="row"><div><strong>JEE Main 2027</strong><div class="muted small">Official date to be confirmed</div></div><span class="pill">Set in Settings</span></div><div style="height:12px"></div><div class="row"><div><strong>JEE Advanced 2027</strong><div class="muted small">Official date to be confirmed</div></div><span class="pill">Set in Settings</span></div><p class="footer-note">Countdowns are intentionally not guessed. Add verified dates in Settings when officially announced.</p></div>
+      <div class="card"><h2>A reminder for today</h2><p class="quote">“You don't have to do everything today. Just do the next right thing.”</p><p class="muted small">Drink water, take breaks, and remember that your worth is bigger than any exam score. ♡</p></div>
+    </div>
+  </section>
+  <section class="page" id="page-focus">
+    <div class="grid two">
+      <div class="card"><span class="pill">FOCUS ROOM</span><h2 style="margin-top:12px">Make this time yours.</h2><div class="filters"><button class="tab active" data-duration="25" onclick="setDuration(25,5,this)">Pomodoro · 25/5</button><button class="tab" data-duration="50" onclick="setDuration(50,10,this)">Long focus · 50/10</button><button class="tab" onclick="customTimer()">Custom</button></div>
+        <div class="timer-wrap"><div class="timer-circle" id="timerCircle"><div class="timer-inner"><div class="timer-time" id="timerTime">25:00</div><div class="timer-caption" id="timerCaption">Focus time</div></div></div><div class="timer-controls"><button class="btn" id="timerStart" onclick="toggleTimer()">Start focus</button><button class="btn secondary" onclick="resetTimer()">Reset</button><button class="btn ghost" onclick="skipTimer()">Skip</button></div></div>
+      </div>
+      <div class="card"><h2>Session details</h2><label class="small muted">What are you studying?</label><select class="field" id="focusSubject" style="margin:6px 0 12px"><option>Physics</option><option>Chemistry</option><option>Mathematics</option><option>Revision</option><option>Mock Test</option></select><label class="small muted">Chapter or task (optional)</label><input class="field" id="focusTopic" placeholder="e.g. Current Electricity" style="margin:6px 0 12px"/><label class="small muted">Daily focus goal (minutes)</label><input class="field" id="focusGoal" type="number" min="15" value="180" onchange="saveSettings()" style="margin:6px 0 14px"/><div class="row"><span class="muted small">Today's completed focus</span><strong id="focusTotal">0 min</strong></div><div class="bar" style="margin:10px 0"><span id="focusBar" style="width:0%"></span></div><h3 style="margin-top:23px">Recent sessions</h3><div id="sessionsList" class="task-list"></div></div>
+    </div>
+  </section>
+  <section class="page" id="page-syllabus">
+    <div class="card"><div class="row"><div><h2>JEE syllabus tracker</h2><p class="muted small">Track learning, practice, and revision topic by topic.</p></div><span class="pill">Starter syllabus</span></div><p class="footer-note">This is an editable starter list, not a certified complete JEE 2027 syllabus. Verify every chapter against the official JEE Main and Advanced 2027 syllabi when published.</p>
+      <div class="subject-tabs"><button class="tab active" onclick="setSyllabusSubject('Physics',this)">Physics</button><button class="tab" onclick="setSyllabusSubject('Chemistry',this)">Chemistry</button><button class="tab" onclick="setSyllabusSubject('Mathematics',this)">Mathematics</button></div>
+      <div class="form-row"><input class="field" id="topicSearch" placeholder="Search chapters or topics..." oninput="renderSyllabus()"/><select class="field" id="statusFilter" onchange="renderSyllabus()"><option value="all">All statuses</option><option>Not started</option><option>Learning</option><option>Practiced</option><option>Needs revision</option><option>Completed</option></select></div>
+      <div id="syllabusList" class="topic-list"></div>
+      <div class="form-row"><input class="field" id="newTopic" placeholder="Add your own topic"/><button class="btn" onclick="addTopic()">+ Add topic</button></div>
+    </div>
+  </section>
+  <section class="page" id="page-tasks">
+    <div class="card"><div class="section-head" style="margin-top:0"><div><h2>Your to-do list</h2><p class="muted small">A plan, not pressure. Start small. ♡</p></div><span class="pill" id="taskCountPill">0 tasks</span></div>
+      <form class="form-row" id="taskForm"><input class="field" id="taskInput" placeholder="What would you like to do?" required/><select class="field" id="taskSubject"><option>Physics</option><option>Chemistry</option><option>Mathematics</option><option>General</option></select><select class="field" id="taskPriority"><option>Medium</option><option>High</option><option>Low</option></select><button class="btn">Add</button></form>
+      <div class="filters"><button class="tab active" onclick="setTaskFilter('all',this)">All</button><button class="tab" onclick="setTaskFilter('active',this)">To do</button><button class="tab" onclick="setTaskFilter('done',this)">Completed</button></div><div id="taskList" class="task-list"></div>
+    </div>
+  </section>
+  <section class="page" id="page-calendar"><div class="card"><h2>Study planner</h2><p class="muted small">A simple look at your month. Add real deadlines as you learn them.</p><div class="row" style="margin:18px 0"><button class="btn secondary" onclick="changeMonth(-1)">← Previous</button><h3 id="calendarTitle" style="margin:0"></h3><button class="btn secondary" onclick="changeMonth(1)">Next →</button></div><div id="calendarGrid" style="display:grid;grid-template-columns:repeat(7,1fr);gap:5px"></div><div class="footer-note">Calendar entries currently highlight dates with tasks. Use Tasks to manage your workload.</div></div></section>
+  <section class="page" id="page-revision"><div class="card"><h2>Revision queue ↻</h2><p class="muted small">Bring difficult topics back before they fade.</p><div id="revisionList" class="topic-list"></div><div class="footer-note">Mark a topic “Needs revision” in the syllabus tracker to add it here.</div></div></section>
+  <section class="page" id="page-tests"><div class="card"><h2>Mock test tracker</h2><p class="muted small">Log your real scores and learn from every test.</p><form class="form-row" id="testForm"><input class="field" id="testName" placeholder="Test name" required/><select class="field" id="testExam"><option>JEE Main</option><option>JEE Advanced</option></select><input class="field" id="testScore" type="number" min="0" placeholder="Score" required/><input class="field" id="testMax" type="number" min="1" value="300" placeholder="Max marks" required/><button class="btn">Save test</button></form><div id="testList" class="table-like"></div><div class="section-head"><h2>Score progression</h2></div><div id="scoreChart" style="height:150px;display:flex;align-items:end;gap:12px;padding:12px 5px;border-bottom:1px solid var(--line)"></div><p class="footer-note">Charts reflect only scores entered by the student.</p></div></section>
+  <section class="page" id="page-pyq"><div class="card"><h2>PYQ & practice tracker</h2><p class="muted small">Record question practice from your trusted resources.</p><form class="form-row" id="pyqForm"><select class="field" id="pyqSubject"><option>Physics</option><option>Chemistry</option><option>Mathematics</option></select><input class="field" id="pyqTopic" placeholder="Topic" required/><input class="field" id="pyqAttempted" type="number" min="1" placeholder="Attempted" required/><input class="field" id="pyqCorrect" type="number" min="0" placeholder="Correct" required/><button class="btn">Log practice</button></form><div id="pyqList" class="task-list"></div></div></section>
+  <section class="page" id="page-notes"><div class="card"><h2>Your notes</h2><p class="muted small">Formulae, mistakes, quick explanations — all in one place.</p><form id="noteForm"><input class="field" id="noteTitle" placeholder="Note title" required style="margin-bottom:9px"/><select class="field" id="noteSubject" style="margin-bottom:9px"><option>Physics</option><option>Chemistry</option><option>Mathematics</option><option>General</option></select><textarea class="field" id="noteBody" rows="5" placeholder="Write your notes here..." required style="resize:vertical"></textarea><button class="btn" style="margin-top:10px">Save note</button></form><div id="notesList" class="topic-list" style="margin-top:18px"></div></div></section>
+  <section class="page" id="page-habits"><div class="card"><h2>Little habits, big results ✿</h2><p class="muted small">No guilt for missed days. Just start again.</p><div id="habitList" class="task-list"></div><button class="btn secondary" onclick="resetHabits()">Reset today's check-in</button></div></section>
+  <section class="page" id="page-settings"><div class="grid two"><div class="card"><h2>Personalize your space</h2><label class="small muted">Display name</label><input class="field" id="displayName" placeholder="Princess" style="margin:6px 0 12px"/><label class="small muted">Compliment popup</label><select class="field" id="popupSetting" style="margin:6px 0 12px"><option value="on">Show on each new visit</option><option value="off">Turn off</option></select><label class="small muted">JEE Main date (official date only)</label><input class="field" type="date" id="mainDate" style="margin:6px 0 12px"/><label class="small muted">JEE Advanced date (official date only)</label><input class="field" type="date" id="advDate" style="margin:6px 0 12px"/><button class="btn" onclick="saveSettings()">Save settings</button></div><div class="card"><h2>Your data</h2><p class="muted small">This version saves data in this browser on this device. It does not sync between devices or create a private account.</p><button class="btn secondary" onclick="exportData()">Export my data (JSON)</button><div style="height:9px"></div><label class="btn ghost" style="display:inline-block">Import backup<input type="file" accept="application/json" style="display:none" onchange="importData(event)"/></label><div style="height:18px"></div><button class="btn ghost" onclick="if(confirm('Clear all saved study data from this browser? Export a backup first if needed.'))clearData()">Clear all data</button><p class="footer-note">For secure login and cross-device sync, a backend such as Supabase needs to be configured.</p></div></div></section>
+  <div class="footer-note">Made with care ♡ Your progress is saved locally in this browser. Back up your data in Settings.</div>
+</main>
+</div>
+<nav class="mobile-nav" id="mobileNav"><button class="active" data-page="dashboard"><span>⌂</span>Home</button><button data-page="focus"><span>◷</span>Focus</button><button data-page="syllabus"><span>♡</span>Syllabus</button><button data-page="tasks"><span>☷</span>Tasks</button><button data-page="settings"><span>⚙</span>More</button></nav>
+<div class="modal-backdrop" id="complimentModal"><div class="modal"><button class="close" onclick="closeCompliment()" aria-label="Close">×</button><div class="flower">🌷</div><h2>A little message for you...</h2><p id="complimentText"></p><div class="signature">— someone who's cheering for you ♡</div><button class="btn" onclick="closeCompliment()">Aww, let's do this ♡</button></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const KEY='jee2027_companion_v1';
+const syllabusSeed={
+Physics:[
+['Units and Measurements',['Units, dimensions and significant figures','Errors in measurement','Dimensional analysis']],
+['Kinematics',['Position, displacement and distance','Speed and velocity','Acceleration','Motion graphs','Projectile motion','Relative motion']],
+['Laws of Motion',['Newton’s laws','Free-body diagrams','Friction','Circular motion']],
+['Work, Energy and Power',['Work and kinetic energy','Potential energy','Conservation of energy','Power and collisions']],
+['Rotational Motion',['Centre of mass','Torque and angular momentum','Moment of inertia','Rolling motion']],
+['Gravitation',['Universal law of gravitation','Gravitational field and potential','Satellites and escape velocity']],
+['Thermodynamics',['Thermal equilibrium','First law of thermodynamics','Heat engines and processes']],
+['Oscillations and Waves',['Simple harmonic motion','Pendulums','Wave motion','Sound waves']],
+['Electrostatics',['Electric charge and field','Gauss law','Electric potential','Capacitance']],
+['Current Electricity',['Current and resistance','Ohm’s law','Kirchhoff laws','Cells and circuits']],
+['Magnetic Effects of Current',['Biot–Savart law','Ampere’s law','Force on charges and wires','Magnetic dipole']],
+['Electromagnetic Induction and AC',['Faraday and Lenz laws','Inductance','Alternating current','Transformers']],
+['Optics',['Reflection and refraction','Optical instruments','Interference and diffraction','Polarisation']],
+['Modern Physics',['Photoelectric effect','Atoms and nuclei','Radioactivity','Semiconductors']]
+],
+Chemistry:[
+['Some Basic Concepts',['Mole concept','Stoichiometry','Concentration terms','Atomic and molecular masses']],
+['Atomic Structure',['Bohr model','Quantum numbers','Orbitals and electronic configuration']],
+['Chemical Bonding',['Lewis structures','VSEPR theory','Hybridisation','Molecular orbital theory']],
+['Chemical Thermodynamics',['Enthalpy and internal energy','Entropy and Gibbs energy','Thermochemistry']],
+['Equilibrium',['Chemical equilibrium','Ionic equilibrium','pH and buffers','Solubility product']],
+['Solutions',['Concentration and colligative properties','Raoult’s law','Ideal and non-ideal solutions']],
+['Electrochemistry',['Electrochemical cells','Nernst equation','Conductance','Electrolysis']],
+['Chemical Kinetics',['Rate law','Order and molecularity','Arrhenius equation','Half-life']],
+['Periodicity',['Periodic trends','Effective nuclear charge','Atomic and ionic radii']],
+['p-Block Elements',['Group-wise properties','Important compounds and reactions']],
+['Coordination Compounds',['Nomenclature','Isomerism','Bonding and crystal field basics']],
+['Organic Chemistry Basics',['IUPAC nomenclature','Isomerism','Inductive and resonance effects','Reaction intermediates']],
+['Hydrocarbons',['Alkanes','Alkenes and alkynes','Aromatic hydrocarbons']],
+['Functional Groups',['Halo compounds','Alcohols, phenols and ethers','Carbonyl compounds','Carboxylic acids and derivatives','Amines']],
+['Biomolecules and Practical Chemistry',['Carbohydrates and proteins','Vitamins and nucleic acids','Qualitative analysis and lab principles']]
+],
+Mathematics:[
+['Sets, Relations and Functions',['Sets and operations','Relations and types of functions','Composition and inverse functions']],
+['Trigonometry',['Identities and equations','Inverse trigonometric functions','Properties of triangles']],
+['Complex Numbers and Quadratic Equations',['Algebra of complex numbers','Argand plane','Quadratic equations and roots']],
+['Sequences and Series',['Arithmetic progressions','Geometric progressions','Special sums']],
+['Permutations and Combinations',['Fundamental counting principle','Permutations','Combinations']],
+['Binomial Theorem',['Binomial expansion','General and middle terms']],
+['Matrices and Determinants',['Matrix operations','Determinants','Inverse and linear equations']],
+['Limits, Continuity and Differentiability',['Limits','Continuity','Differentiation rules','Implicit and parametric differentiation']],
+['Applications of Derivatives',['Monotonicity','Tangents and normals','Maxima and minima']],
+['Integral Calculus',['Indefinite integrals','Definite integrals','Area under curves','Differential equations']],
+['Coordinate Geometry',['Straight lines','Circles','Parabola','Ellipse and hyperbola']],
+['Vectors and 3D Geometry',['Vector operations','Dot and cross products','Lines and planes in 3D']],
+['Probability and Statistics',['Probability rules','Conditional probability','Mean, variance and standard deviation']],
+['Mathematical Reasoning',['Statements and logical connectives','Implications and quantifiers']]
+]};
+const compliments=[
+"You're capable of more than you sometimes realize. Take it one step at a time. ♡",
+"You're such a lovely person, and I'm proud of the effort you put into your dreams.",
+"One difficult day never defines how amazing you are.",
+"Your dreams matter, and so do you. Be kind to yourself today. ♡",
+"You don't have to be perfect today. Just show up for yourself.",
+"Someone out there is cheering for you, always. 🌷",
+"You have your own kind of magic. Don't forget that.",
+"Every small step counts, even the ones nobody else sees.",
+"You're allowed to rest. Your worth isn't measured by study hours.",
+"Go at your own pace, pretty girl. You've got this. ♡",
+"I hope you see a little of the wonderful person I see in you.",
+"Even when progress feels slow, your effort still matters.",
+"You're more than a score, a rank, or a result. Always remember that.",
+"Take a breath, relax your shoulders, and begin with one small thing.",
+"Your kindness is beautiful. Keep some of it for yourself, too.",
+"Today is another chance, not a test of your worth.",
+"You don't need to have everything figured out to make progress.",
+"Little by little, you're building a future you can be proud of.",
+"I hope something makes you smile today. You deserve that. ♡",
+"Be proud of the girl who keeps trying, even when it's hard.",
+"Your best looks different every day, and that's completely okay.",
+"You can take a break without feeling guilty. Rest is part of the plan.",
+"There's no need to compare your chapter one to someone else's chapter ten.",
+"You are smart, resilient, and allowed to learn at your own pace.",
+"Sending you a tiny reminder that you are loved and appreciated. ♡",
+"One page, one problem, one focused session. That's enough to start.",
+"You bring something special into the world just by being you.",
+"Don't let one bad mock test make you forget how far you've come.",
+"Your effort is meaningful, even before anyone can see the results.",
+"Drink some water, take a deep breath, and give yourself a little grace.",
+"You're doing something challenging. Please remember to be gentle with yourself.",
+"You don't have to earn kindness by being productive.",
+"Keep your dreams big and your next step small.",
+"Your future self will be grateful for the little things you do today.",
+"You deserve support on the difficult days, not just applause on the good ones.",
+"Progress can be quiet. It still counts.",
+"There's something lovely about the way you keep trying.",
+"May your mind feel calm and your confidence grow a little today. ♡",
+"You're allowed to begin again as many times as you need.",
+"Even five focused minutes are a real beginning.",
+"Don't forget to celebrate the small wins. They're part of the journey.",
+"Your value doesn't go up or down with your productivity.",
+"You're not behind in life. You're learning, growing, and finding your way.",
+"Be curious, be patient, and give yourself time to understand.",
+"I hope today gives you at least one reason to feel proud.",
+"You can do hard things without being hard on yourself.",
+"Your dreams deserve effort, and you deserve care along the way.",
+"Take the pressure off your shoulders. You only need to do the next step.",
+"You're allowed to have an imperfect day and still be moving forward.",
+"Just in case you forgot: you're pretty wonderful. ♡",
+"Keep going gently. I'm rooting for you."
+];
+const habitsSeed=['Complete one focused study session','Revise at least one topic','Practice a few PYQs','Review mistakes without judging yourself','Take proper breaks and drink water','Plan tomorrow before bed'];
+function freshState(){let topics=[];Object.entries(syllabusSeed).forEach(([s,chs])=>chs.forEach(([ch,ts])=>ts.forEach(t=>topics.push({id:crypto.randomUUID(),subject:s,chapter:ch,name:t,status:'Not started',confidence:3,pyq:0,correct:0,notes:''}))));return {tasks:[],topics,sessions:[],tests:[],pyqs:[],notes:[],habits:{},settings:{name:'Princess',popup:'on',goal:180,mainDate:'',advDate:''},lastCompliment:-1};}
+let state;try{state=JSON.parse(localStorage.getItem(KEY))||freshState()}catch(e){state=freshState()}
+function save(){localStorage.setItem(KEY,JSON.stringify(state));updateDashboard()}
+function toast(msg){let t=document.getElementById('toast');t.textContent=msg;t.style.display='block';clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display='none',2400)}
+function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+name));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===name));const titles={dashboard:`Good morning, ${state.settings.name||'princess'}. ♡`,focus:'Focus Room ♡',syllabus:'Your JEE syllabus',tasks:'Your little to-do list',calendar:'Your study calendar',revision:'Time to revisit',tests:'Mock test tracker',pyq:'Practice makes progress',notes:'Your notes & formulae',habits:'Little habits, big results',settings:'Make it yours ♡'};document.getElementById('pageTitle').textContent=titles[name]||'Your study space';if(name==='syllabus')renderSyllabus();if(name==='tasks')renderTasks();if(name==='calendar')renderCalendar();if(name==='revision')renderRevision();if(name==='tests')renderTests();if(name==='pyq')renderPyqs();if(name==='notes')renderNotes();if(name==='habits')renderHabits();if(name==='focus')renderSessions();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function dayKey(d=new Date()){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function updateDashboard(){
+ const mins=state.sessions.filter(s=>s.day===dayKey()&&s.type==='Focus').reduce((a,s)=>a+s.minutes,0);
+ document.getElementById('todayFocus').textContent=mins>=60?`${Math.floor(mins/60)}h ${mins%60}m`:`${mins} min`;
+ document.getElementById('focusTotal').textContent=document.getElementById('todayFocus').textContent;
+ const done=state.tasks.filter(t=>t.done).length;document.getElementById('taskStat').textContent=`${done} / ${state.tasks.length}`;
+ document.getElementById('taskCountPill').textContent=`${state.tasks.length} tasks`;
+ const completed=state.topics.filter(t=>t.status==='Completed').length;document.getElementById('syllabusStat').textContent=Math.round(100*completed/Math.max(1,state.topics.length))+'%';
+ const days=new Set(state.sessions.filter(s=>s.type==='Focus').map(s=>s.day));let streak=0,d=new Date();while(days.has(dayKey(d))){streak++;d.setDate(d.getDate()-1)}document.getElementById('streakStat').textContent=streak+' days';
+ const goal=Number(state.settings.goal)||180;document.getElementById('focusGoal').value=goal;document.getElementById('focusBar').style.width=Math.min(100,mins/goal*100)+'%';
+ const todayTasks=state.tasks.filter(t=>!t.done).slice(0,5);document.getElementById('dashTasks').innerHTML=todayTasks.length?todayTasks.map(t=>`<div class="task"><input type="checkbox" onchange="toggleTask('${t.id}',this.checked)"><div><div class="task-title">${esc(t.title)}</div><div class="task-meta">${esc(t.subject)} · ${esc(t.priority)} priority</div></div></div>`).join(''):'<div class="empty">No tasks waiting. Add one small goal for today. ♡</div>';
+ document.getElementById('subjectProgress').innerHTML=['Physics','Chemistry','Mathematics'].map(s=>{let arr=state.topics.filter(t=>t.subject===s),n=arr.filter(t=>t.status==='Completed').length,p=Math.round(n/Math.max(1,arr.length)*100);return `<div class="subject-row"><div class="row"><strong>${s}</strong><span class="muted">${p}%</span></div><div class="bar"><span style="width:${p}%"></span></div></div>`}).join('');
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+let currentSubject='Physics';
+function setSyllabusSubject(s,el){currentSubject=s;document.querySelectorAll('#page-syllabus .subject-tabs .tab').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderSyllabus()}
+function renderSyllabus(){let q=(document.getElementById('topicSearch')?.value||'').toLowerCase(),f=document.getElementById('statusFilter')?.value||'all';let arr=state.topics.filter(t=>t.subject===currentSubject&&(t.name+' '+t.chapter).toLowerCase().includes(q)&&(f==='all'||t.status===f));document.getElementById('syllabusList').innerHTML=arr.length?arr.map(t=>`<div class="topic"><div><strong>${esc(t.name)}</strong><small>${esc(t.chapter)} · ${esc(t.subject)}</small></div><select aria-label="Status for ${esc(t.name)}" onchange="changeTopic('${t.id}',this.value)">${['Not started','Learning','Practiced','Needs revision','Completed'].map(s=>`<option ${t.status===s?'selected':''}>${s}</option>`).join('')}</select></div>`).join(''):'<div class="empty">No topics match. Try another search or add your own. ♡</div>'}
+function changeTopic(id,status){let t=state.topics.find(x=>x.id===id);if(t){t.status=status;save();renderSyllabus();renderRevision();toast('Progress saved ♡')}}
+function addTopic(){let input=document.getElementById('newTopic'),name=input.value.trim();if(!name)return;state.topics.push({id:crypto.randomUUID(),subject:currentSubject,chapter:'My added topics',name,status:'Not started',confidence:3,pyq:0,correct:0,notes:''});input.value='';save();renderSyllabus();toast('Topic added ♡')}
+let taskFilter='all';
+document.getElementById('taskForm').addEventListener('submit',e=>{e.preventDefault();state.tasks.unshift({id:crypto.randomUUID(),title:document.getElementById('taskInput').value.trim(),subject:document.getElementById('taskSubject').value,priority:document.getElementById('taskPriority').value,done:false,created:dayKey()});document.getElementById('taskInput').value='';save();renderTasks();toast('Task added ♡')});
+function setTaskFilter(f,el){taskFilter=f;document.querySelectorAll('#page-tasks .filters .tab').forEach(b=>b.classList.remove('active'));el.classList.add('active');renderTasks()}
+function toggleTask(id,v){let t=state.tasks.find(t=>t.id===id);if(t)t.done=v;save();renderTasks()}
+function deleteTask(id){state.tasks=state.tasks.filter(t=>t.id!==id);save();renderTasks()}
+function renderTasks(){let arr=state.tasks.filter(t=>taskFilter==='all'||(taskFilter==='active'&&!t.done)||(taskFilter==='done'&&t.done));document.getElementById('taskList').innerHTML=arr.length?arr.map(t=>`<div class="task ${t.done?'done':''}"><input type="checkbox" ${t.done?'checked':''} onchange="toggleTask('${t.id}',this.checked)"><div style="flex:1"><div class="task-title">${esc(t.title)}</div><div class="task-meta">${esc(t.subject)} · ${esc(t.priority)} priority</div></div><button class="btn ghost" style="padding:6px 9px" onclick="deleteTask('${t.id}')">Delete</button></div>`).join(''):'<div class="empty">Nothing here yet. Add a task when you are ready. ♡</div>'}
+let workDuration=25,breakDuration=5,remaining=1500,running=false,mode='Focus',endAt=0,tick=null;
+function setDuration(w,b,el){workDuration=w;breakDuration=b;mode='Focus';remaining=w*60;running=false;clearInterval(tick);document.querySelectorAll('#page-focus .tab').forEach(x=>x.classList.remove('active'));el.classList.add('active');updateTimerUI()}
+function customTimer(){let w=Number(prompt('Focus duration in minutes (5–180):','35'));if(!w||w<5||w>180)return;let b=Number(prompt('Break duration in minutes (1–60):','7'));if(!b||b<1||b>60)return;workDuration=w;breakDuration=b;mode='Focus';remaining=w*60;running=false;clearInterval(tick);document.querySelectorAll('#page-focus .tab').forEach(x=>x.classList.remove('active'));updateTimerUI()}
+function updateTimerUI(){let mm=Math.floor(remaining/60),ss=remaining%60;document.getElementById('timerTime').textContent=String(mm).padStart(2,'0')+':'+String(ss).padStart(2,'0');document.getElementById('timerCaption').textContent=mode==='Focus'?'Focus time':'Break time';let total=(mode==='Focus'?workDuration:breakDuration)*60;document.getElementById('timerCircle').style.setProperty('--progress',((total-remaining)/total*100)+'%');document.getElementById('timerStart').textContent=running?'Pause': 'Start '+mode.toLowerCase()}
+function toggleTimer(){if(running){running=false;clearInterval(tick);tick=null;updateTimerUI();return}running=true;endAt=Date.now()+remaining*1000;tick=setInterval(()=>{remaining=Math.max(0,Math.ceil((endAt-Date.now())/1000));updateTimerUI();if(remaining<=0){clearInterval(tick);tick=null;running=false;finishTimer()}},250);updateTimerUI()}
+function finishTimer(){if(mode==='Focus'){let mins=workDuration;state.sessions.unshift({id:crypto.randomUUID(),day:dayKey(),type:'Focus',minutes:mins,subject:document.getElementById('focusSubject').value,topic:document.getElementById('focusTopic').value.trim(),time:new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})});mode='Break';remaining=breakDuration*60;save();renderSessions();toast('Focus session completed. Take your break! ♡');if('Notification'in window&&Notification.permission==='granted')new Notification('Focus session complete',{body:'You did well. Time for a gentle break ♡'})}else{mode='Focus';remaining=workDuration*60;toast('Break finished. Ready when you are ♡')}updateTimerUI()}
+function resetTimer(){running=false;clearInterval(tick);tick=null;remaining=(mode==='Focus'?workDuration:breakDuration)*60;updateTimerUI()}
+function skipTimer(){running=false;clearInterval(tick);tick=null;if(mode==='Focus'){mode='Break';remaining=breakDuration*60}else{mode='Focus';remaining=workDuration*60}updateTimerUI()}
+function renderSessions(){let list=state.sessions.slice(0,5);document.getElementById('sessionsList').innerHTML=list.length?list.map(s=>`<div class="task"><span>${s.type==='Focus'?'♡':'☕'}</span><div><div class="task-title">${esc(s.subject||s.type)} · ${s.minutes} min</div><div class="task-meta">${esc(s.topic||s.day)} · ${esc(s.time||'')}</div></div></div>`).join(''):'<div class="empty">Your completed focus sessions will appear here.</div>'}
+let calDate=new Date();function changeMonth(n){calDate.setMonth(calDate.getMonth()+n);renderCalendar()}
+function renderCalendar(){let y=calDate.getFullYear(),m=calDate.getMonth(),first=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate();document.getElementById('calendarTitle').textContent=calDate.toLocaleDateString(undefined,{month:'long',year:'numeric'});let html=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(x=>`<div style="text-align:center;color:var(--muted);font-size:10px;padding:8px">${x}</div>`).join('');for(let i=0;i<first;i++)html+='<div></div>';for(let d=1;d<=days;d++){let date=new Date(y,m,d),key=dayKey(date),has=state.tasks.some(t=>t.created===key),today=key===dayKey();html+=`<div style="min-height:53px;border:1px solid ${today?'#e9a2bd':'#f4e8ee'};border-radius:10px;padding:7px;background:${today?'#fff0f6':'white'};font-size:12px">${d}${has?'<div style="color:#d97fa2;font-size:10px;margin-top:5px">♡ task</div>':''}</div>`}document.getElementById('calendarGrid').innerHTML=html}
+function renderRevision(){let arr=state.topics.filter(t=>t.status==='Needs revision');document.getElementById('revisionList').innerHTML=arr.length?arr.map(t=>`<div class="topic"><div><strong>${esc(t.name)}</strong><small>${esc(t.subject)} · ${esc(t.chapter)}</small></div><button class="btn secondary" onclick="changeTopic('${t.id}','Learning')">Reviewed ✓</button></div>`).join(''):'<div class="empty">Your revision queue is clear. Add topics that need another look. ♡</div>'}
+document.getElementById('testForm').addEventListener('submit',e=>{e.preventDefault();let score=Number(document.getElementById('testScore').value),max=Number(document.getElementById('testMax').value);if(max<=0||score<0||score>max){toast('Please check the score and maximum marks.');return}state.tests.push({id:crypto.randomUUID(),name:document.getElementById('testName').value.trim(),exam:document.getElementById('testExam').value,score,max,date:dayKey()});save();e.target.reset();document.getElementById('testMax').value=300;renderTests();toast('Mock test saved ♡')});
+function renderTests(){let list=state.tests.slice().reverse();document.getElementById('testList').innerHTML=list.length?'<div class="test-row header"><span>TEST</span><span>SCORE</span><span>RESULT</span></div>'+list.map(t=>`<div class="test-row"><span><strong>${esc(t.name)}</strong><div class="task-meta">${esc(t.exam)} · ${t.date}</div></span><span>${t.score}/${t.max}</span><span>${Math.round(t.score/t.max*100)}%</span></div>`).join(''):'<div class="empty">Your real test results will appear here.</div>';let chart=document.getElementById('scoreChart');chart.innerHTML=list.length?list.slice(0,10).reverse().map(t=>`<div title="${esc(t.name)}: ${t.score}/${t.max}" style="flex:1;min-width:15px;height:${Math.max(5,t.score/t.max*100)}%;background:linear-gradient(#e995b5,#f8d7e4);border-radius:7px 7px 0 0;position:relative"></div>`).join(''):'<div class="muted small">Add a mock test to see progress.</div>'}
+document.getElementById('pyqForm').addEventListener('submit',e=>{e.preventDefault();let a=Number(document.getElementById('pyqAttempted').value),c=Number(document.getElementById('pyqCorrect').value);if(c>a){toast('Correct answers cannot exceed attempted questions.');return}state.pyqs.unshift({id:crypto.randomUUID(),subject:document.getElementById('pyqSubject').value,topic:document.getElementById('pyqTopic').value.trim(),attempted:a,correct:c,date:dayKey()});save();e.target.reset();renderPyqs();toast('Practice logged ♡')});
+function renderPyqs(){document.getElementById('pyqList').innerHTML=state.pyqs.length?state.pyqs.map(p=>`<div class="topic"><div><strong>${esc(p.topic)}</strong><small>${esc(p.subject)} · ${p.date} · ${p.correct}/${p.attempted} correct (${Math.round(p.correct/p.attempted*100)}%)</small></div><span class="pill">${p.attempted} Qs</span></div>`).join(''):'<div class="empty">Log your first practice session here. ♡</div>'}
+document.getElementById('noteForm').addEventListener('submit',e=>{e.preventDefault();state.notes.unshift({id:crypto.randomUUID(),title:document.getElementById('noteTitle').value.trim(),subject:document.getElementById('noteSubject').value,body:document.getElementById('noteBody').value,date:dayKey()});save();e.target.reset();renderNotes();toast('Note saved ♡')});
+function renderNotes(){document.getElementById('notesList').innerHTML=state.notes.length?state.notes.map(n=>`<div class="topic"><div><strong>${esc(n.title)}</strong><small>${esc(n.subject)} · ${n.date}<br>${esc(n.body).slice(0,180)}</small></div><button class="btn ghost" onclick="deleteNote('${n.id}')">Delete</button></div>`).join(''):'<div class="empty">Your saved notes will show up here.</div>'}
+function deleteNote(id){state.notes=state.notes.filter(n=>n.id!==id);save();renderNotes()}
+function renderHabits(){document.getElementById('habitList').innerHTML=habitsSeed.map((h,i)=>`<div class="task"><input type="checkbox" ${state.habits[dayKey()]?.includes(i)?'checked':''} onchange="toggleHabit(${i},this.checked)"><div class="task-title">${h}</div></div>`).join('')}
+function toggleHabit(i,v){if(!state.habits[dayKey()])state.habits[dayKey()]=[];state.habits[dayKey()]=state.habits[dayKey()].filter(x=>x!==i);if(v)state.habits[dayKey()].push(i);save()}
+function resetHabits(){delete state.habits[dayKey()];save();renderHabits()}
+function saveSettings(){state.settings.name=document.getElementById('displayName').value.trim()||'Princess';state.settings.popup=document.getElementById('popupSetting').value;state.settings.mainDate=document.getElementById('mainDate').value;state.settings.advDate=document.getElementById('advDate').value;state.settings.goal=Number(document.getElementById('focusGoal').value)||180;save();toast('Settings saved ♡')}
+function loadSettings(){document.getElementById('displayName').value=state.settings.name||'Princess';document.getElementById('popupSetting').value=state.settings.popup||'on';document.getElementById('mainDate').value=state.settings.mainDate||'';document.getElementById('advDate').value=state.settings.advDate||'';document.getElementById('focusGoal').value=state.settings.goal||180}
+function exportData(){let blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='jee2027-study-backup.json';a.click();URL.revokeObjectURL(a.href);toast('Backup exported ♡')}
+function importData(e){let file=e.target.files[0];if(!file)return;let r=new FileReader();r.onload=()=>{try{let obj=JSON.parse(r.result);if(!obj.topics||!obj.settings)throw Error();state=obj;save();loadSettings();renderSyllabus();renderTasks();renderTests();renderNotes();toast('Backup imported ♡')}catch(err){toast('That backup file could not be read.')}};r.readAsText(file)}
+function clearData(){localStorage.removeItem(KEY);state=freshState();save();loadSettings();renderSyllabus();renderTasks();renderTests();renderNotes();renderPyqs();toast('Local study data cleared')}
+function openCompliment(force=false){let modal=document.getElementById('complimentModal');let idx=Math.floor(Math.random()*compliments.length);if(compliments.length>1&&idx===state.lastCompliment)idx=(idx+1)%compliments.length;state.lastCompliment=idx;localStorage.setItem(KEY,JSON.stringify(state));document.getElementById('complimentText').textContent=compliments[idx];modal.classList.add('show')}
+function closeCompliment(){document.getElementById('complimentModal').classList.remove('show')}
+document.getElementById('complimentModal').addEventListener('click',e=>{if(e.target.id==='complimentModal')closeCompliment()});
+document.getElementById('dateLine').textContent=new Date().toLocaleDateString(undefined,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+loadSettings();updateDashboard();renderSyllabus();renderTasks();renderSessions();renderCalendar();renderRevision();renderTests();renderPyqs();renderNotes();renderHabits();updateTimerUI();
+if(state.settings.popup!=='off'&&!sessionStorage.getItem('complimentShown')){sessionStorage.setItem('complimentShown','1');setTimeout(()=>openCompliment(),450)}
+</script>
+</body>
+</html>
